@@ -1,0 +1,317 @@
+:root {
+  /* header */
+  --logo-text: "Raleway";
+  --logo-color-1: #000000;
+  --logo-color-2: #ffffff;
+  /* main */
+  --main-font: "Roboto";
+  --main-font-color: #212121;
+  --main-background-color: #ffffff;
+  /* menu */
+  --header-menu-title-color: #212121;
+  --header-menu-address-color: #757575;
+  /* hero */
+  --hero-title-color: #ffffff;
+  --title-color: #212121;
+  --description-text-color: #757575;
+  /* footer */
+  --footer-conection-text-color: #ffffff;
+  --footer-address-text-color: rgba(255, 255, 255, 0.6);
+  /* hover */
+  --accent-color: #2196f3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.hover:hover,
+.focus:focus {
+  color: var(--accent-color);
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--main-font-color);
+}
+
+/* header styles */
+
+.logo-1,
+.logo-2 {
+  font-family: var(--logo-text);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-1);
+}
+.logo-2-1,
+.logo-2-2 {
+  font-family: var(--logo-text);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-2);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  display: flex;
+  align-items: center;
+
+  margin-right: 40px;
+}
+
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  color: var(--header-menu-title-color);
+}
+.header-address-email,
+.header-address-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.875;
+  letter-spacing: 0.02em;
+  color: var(--header-menu-address-color);
+  font-style: normal;
+}
+
+/* main-hero */
+
+main {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.615;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+}
+
+.main-hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 0.73;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /* color: #ffffff; */
+}
+
+.main-hero-button {
+  /* position: absolute; */
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 0.53;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.main-filter-list-item-button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-font-color);
+}
+
+/*  Section 2  */
+.main-merits-list-item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.main-merits-list-item-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.583;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
+.main-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.main-doings-list-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* color: #ffffff; */
+}
+
+/* team section */
+.main-team-list-teammate-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.main-team-list-teammate-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
+
+.projects-list-item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.5;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.projects-list-item-type {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
+
+footer {
+  display: flex;
+  /* position: absolute; */
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background: #2f303a;
+}
+
+.footer-contacts-address {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.857;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-contacts-email-link,
+.footer-contacts-tel {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.857;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-connections-title-1 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-conection-text-color);
+}
+
+.footer-connections-title-2 {
+  margin-left: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-conection-text-color);
+}
+
+.footer-connection-input {
+  margin: auto;
+}
+
+.footer-button-tosign {
+  /* position: absolute; */
+  width: 200px;
+  height: 50px;
+  left: 1184px;
+  top: 1736px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
