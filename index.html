@@ -7,38 +7,48 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
     <header class="header">
-      <div>
-        <nav class="navigation">
+      <div class="container">
+        <!-- меню навигации  -->
+        <nav class="header-navigation">
           <!-- logo -->
-          <a class="logo-2 link" href="./index.html">
-            <span class="logo-1 link hover">web</span>
-            studio
-          </a>
+
+          <div class="header-navigation-logo">
+            <a class="logo link" href="./index.html">
+              <span class="logo-1 link hover">web</span>
+              <span class="logo-2">
+                studio
+              </span>
+            </a>
+          </div>
 
           <!-- Меню навигации -->
 
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link hover focus" href=""
+          <ul class="header-navigation-list list">
+            <li class="header-navigation-list-item">
+              <a
+                class="header-navigation-list-item-link link hover focus"
+                href=""
                 >Студия</a
               >
             </li>
-            <li class="navigation-list-item">
+            <li class="header-navigation-list-item">
               <a
-                class="navigation-list-link link hover focus"
-                href="./portfolio.html"
+                class="header-navigation-list-item-link link hover focus"
+                href="portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link hover focus" href=""
+            <li class="header-navigation-list-item">
+              <a
+                class="header-navigation-list-item-link link hover focus"
+                href=""
                 >Контакты</a
               >
             </li>
@@ -46,84 +56,99 @@
         </nav>
 
         <!-- контакты -->
-
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <li>
-              <a class="header-address-email link hover focus" href="mailto:"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="header-address-tel link hover focus"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="header-contacts">
+          <address class="header-address">
+            <ul class="header-address-list list">
+              <li>
+                <a
+                  class="header-address-list-email link hover focus"
+                  href="mailto:"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-address-list-tel link hover focus"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
     <main>
       <!--  Section 1 (HERO) -->
-      <section class="main-hero">
-        <h1 class="main-hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="main-hero-button">Заказать услугу</button>
+      <section>
+        <div class="main-hero">
+          <img src="./images/main/section-1/hero-img.jpg" alt="hero-img" />
+          <h1 class="main-hero-title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button class="main-hero-button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Section 2 -->
-      <section class="main-merits">
-        <ul class="main-merits-list list">
-          <!-- item_1 -->
-          <li class="main-merits-list-item">
-            <img
-              src="./images/main/section-2/antenna.svg"
-              alt="Внимание к деталям"
-            />
-            <h3 class="main-merits-list-item-title">Внимание к деталям</h3>
-            <p class="main-merits-list-item-description">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <!-- item_2 -->
-          <li class="main-merits-list-item">
-            <img
-              src="./images/main/section-2/Vector.svg"
-              alt="Пунктуальность"
-            />
-            <h3 class="main-merits-list-item-title">Пунктуальность</h3>
-            <p class="main-merits-list-item-description">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <!-- item_3 -->
-          <li class="main-merits-list-item">
-            <img src="./images/main/section-2/diagram.svg" alt="Планирование" />
+      <section>
+        <div class="main-merits">
+          <ul class="main-merits-list list">
+            <!-- item_1 -->
+            <li class="main-merits-list-item">
+              <img
+                src="./images/main/section-2/antenna.svg"
+                alt="Внимание к деталям"
+              />
+              <h3 class="main-merits-list-item-title">Внимание к деталям</h3>
+              <p class="main-merits-list-item-description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <!-- item_2 -->
+            <li class="main-merits-list-item">
+              <img
+                src="./images/main/section-2/Vector.svg"
+                alt="Пунктуальность"
+              />
+              <h3 class="main-merits-list-item-title">Пунктуальность</h3>
+              <p class="main-merits-list-item-description">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <!-- item_3 -->
+            <li class="main-merits-list-item">
+              <img
+                src="./images/main/section-2/diagram.svg"
+                alt="Планирование"
+              />
 
-            <h3 class="main-merits-list-item-title">Планирование</h3>
-            <p class="main-merits-list-item-description">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <!-- item_4 -->
-          <li>
-            <img
-              src="./images/main/section-2/astronaut.svg"
-              alt="Современные технологии"
-            />
+              <h3 class="main-merits-list-item-title">Планирование</h3>
+              <p class="main-merits-list-item-description">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!-- item_4 -->
+            <li>
+              <img
+                src="./images/main/section-2/astronaut.svg"
+                alt="Современные технологии"
+              />
 
-            <h3 class="main-merits-list-item-title">Современные технологии</h3>
-            <p class="main-merits-list-item-description">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+              <h3 class="main-merits-list-item-title">
+                Современные технологии
+              </h3>
+              <p class="main-merits-list-item-description">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Section 3 -->
