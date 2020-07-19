@@ -81,18 +81,20 @@
 
     <main>
       <!--  Section 1 (HERO) -->
-      <section>
-        <div class="main-hero">
-          <img src="./images/main/section-1/hero-img.jpg" alt="hero-img" />
+      <section class="main-hero">
+        <div class="main-hero-slider">
+          <!-- <img src="./images/main/section-1/hero-img.jpg" alt="hero-img" /> -->
+
           <h1 class="main-hero-title">
-            Эффективные решения для вашего бизнеса
+            Эффективные решения<br />для вашего бизнеса
           </h1>
+
           <button class="main-hero-button">Заказать услугу</button>
         </div>
       </section>
 
       <!-- Section 2 -->
-      <section>
+      <section class="main-section-2">
         <div class="main-merits">
           <ul class="main-merits-list list">
             <!-- item_1 -->
@@ -133,7 +135,7 @@
               </p>
             </li>
             <!-- item_4 -->
-            <li>
+            <li class="main-merits-list-item">
               <img
                 src="./images/main/section-2/astronaut.svg"
                 alt="Современные технологии"
@@ -153,13 +155,14 @@
 
       <!-- Section 3 -->
       <section class="main-doings">
-        <h2 class="main-title">Чем мы занимаемся</h2>
+        <h2 class="main-doings-title">Чем мы занимаемся</h2>
         <ul class="main-doings-list list">
           <li class="main-doings-list-item">
             <img
               src="./images/main/section-3/box-1.jpg"
               alt="Десктопные приложения"
             />
+            <img src="./images/main/section-3/bg.svg" alt="grey-block" />
             <p class="main-doings-list-title">Десктопные приложения</p>
           </li>
 
@@ -168,6 +171,7 @@
               src="./images/main/section-3/box-2.jpg"
               alt="Мобильные приложения"
             />
+            <img src="./images/main/section-3/bg.svg" alt="grey-block" />
             <p class="main-doings-list-title">Мобильные приложения</p>
           </li>
 
@@ -176,6 +180,7 @@
               src="./images/main/section-3/box-3.jpg"
               alt="Дизайнерские решения"
             />
+            <img src="./images/main/section-3/bg.svg" alt="grey-block" />
             <p class="main-doings-list-title">Дизайнерские решения</p>
           </li>
         </ul>
@@ -367,30 +372,32 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer-contacts">
-        <a class="logo-2-1 link" href="./index.html">
-          <span class="logo-2-2 link hover">web</span>
-          studio
-        </a>
+        <div class="footer-logo">
+          <a class="logo-2-1 link" href="./index.html">
+            <span class="logo-2-2 link hover">web</span>
+            studio
+          </a>
+        </div>
 
         <!-- footer-address -->
         <address class="footer-contacts-address">
           г. Киев, пр-т Леси Украинки, 26
-
-          <ul class="footer-contacts-address-list list">
-            <!-- footer-email -->
-            <li class="footer-contacts-email">
-              <a class="footer-contacts-email-link link" href="mailto:"
-                >info@devstudio.com</a
-              >
-            </li>
-            <!-- footer-tel -->
-            <li class="footer-contacts-tel">
-              <a class="footer-contacts-tel link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </address>
+
+        <ul class="footer-contacts-address-list list">
+          <!-- footer-email -->
+          <li class="footer-contacts-email">
+            <a class="footer-contacts-email-link link" href="mailto:"
+              >info@devstudio.com</a
+            >
+          </li>
+          <!-- footer-tel -->
+          <li class="footer-contacts-tel">
+            <a class="footer-contacts-tel link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
 
       <!-- foorter-connections -->
@@ -453,8 +460,12 @@
         </ul>
       </div>
 
-      <b class="footer-connections-title-2">Подпишитесь на рассылку</b>
-      <input class="footer-connection-input" lang="en" type="text" />
+      <!-- subscription -->
+      <div class="footer-subscription">
+        <b class="footer-connections-title-2">Подпишитесь на рассылку</b>
+
+        <input class="footer-connection-input" lang="en" type="text" />
+      </div>
       <button class="footer-button-tosign">
         Подписаться
         <img src="./images/footer/icon-send.svg" alt="icon-send" />

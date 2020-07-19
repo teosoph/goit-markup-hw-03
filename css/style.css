@@ -55,6 +55,10 @@ body {
   color: var(--main-font-color);
 }
 
+h1 {
+  margin: 0;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -64,9 +68,6 @@ body {
 }
 
 /* HEADER */
-
-.header {
-}
 
 .header,
 .container {
@@ -159,7 +160,7 @@ body {
   margin-right: 30px;
 }
 
-/* main-hero */
+/* MAIN */
 
 main {
   font-style: normal;
@@ -169,52 +170,68 @@ main {
   color: var(--main-font-color);
 }
 
+/* main-hero */
+
+.main-hero-slider {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: fit-content;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
+}
+
 .main-hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.73;
-  /* text-align: center; */
+  line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  /* color: #ffffff; */
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .main-hero-button {
-  /* position: absolute; */
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 0.53;
+  color: #ffffff;
+
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
 
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 0.53;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-}
-.main-filter-list-item-button {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--main-font-color);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*  Section 2  */
+
+.main-merits {
+  margin-bottom: 94px;
+  text-align: center;
+}
+
+.main-merits-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
+.main-merits-list-item {
+  display: inline-block;
+  width: 270px;
+  height: 251px;
+}
+
 .main-merits-list-item-title {
   font-weight: bold;
   font-size: 14px;
@@ -230,28 +247,63 @@ main {
   line-height: 0.583;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
+  display: inline-block;
+  line-height: 1.2;
 }
-.main-title {
+
+/* Main-doings */
+
+.main-doings-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-doings-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
 }
 
 .main-doings-list-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   /* color: #ffffff; */
 }
 
 /* team section */
+
+.main-team {
+  text-align: center;
+}
+.main-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+
+.main-team-list-teammate:not(:last-child) {
+  margin-right: 30px;
+}
+
 .main-team-list-teammate-title {
   font-weight: 500;
   font-size: 16px;
@@ -259,6 +311,7 @@ main {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--title-color);
+  text-align: center;
 }
 .main-team-list-teammate-position {
   font-weight: normal;
@@ -267,6 +320,24 @@ main {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--description-text-color);
+  text-align: center;
+}
+.main-team-list-teammate-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* Clients section */
+.main-clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
 }
 
 .projects-list-item-title {
@@ -287,14 +358,39 @@ main {
   color: var(--description-text-color);
 }
 
+/* Portfolio main-filter  */
+.main-filter-list-item-button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-font-color);
+}
+
+/* Footer */
 footer {
-  display: flex;
-  /* position: absolute; */
-  width: 1600px;
+  background: #2f303a;
   height: 252px;
   left: 0px;
   top: 1628px;
-  background: #2f303a;
+
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-contacts {
+  margin-right: 69px;
 }
 
 .footer-contacts-address {
@@ -305,6 +401,8 @@ footer {
   line-height: 0.857;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  margin-bottom: 9px;
 }
 
 .footer-contacts-email-link,
@@ -316,6 +414,15 @@ footer {
   line-height: 0.857;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 9px;
+}
+
+.footer-connections-socials {
+  display: flex;
+}
+
+.footer-subscription {
 }
 
 .footer-connections-title-1 {
@@ -327,6 +434,8 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
+
+  margin-bottom: 20px;
 }
 
 .footer-connections-title-2 {
@@ -339,6 +448,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
+  margin-bottom: 20px;
 }
 
 .footer-connection-input {
