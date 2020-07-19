@@ -334,11 +334,27 @@ main {
 .main-clients-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 215px;
   margin-right: 215px;
   margin-bottom: 94px;
 }
+.main-clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.main-clients-list-item-link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-clients-list-item-link-img {
+}
+
 .projects-list-item-title {
   font-style: normal;
   font-weight: bold;
