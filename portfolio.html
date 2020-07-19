@@ -16,12 +16,18 @@
     <h1 hidden>111111</h1>
     <header class="header">
       <div class="container">
+        <!-- меню навигации  -->
         <nav class="header-navigation">
           <!-- logo -->
-          <a class="logo-2 link" href="./index.html">
-            <span class="logo-1 link hover">web</span>
-            studio
-          </a>
+
+          <div class="header-navigation-logo">
+            <a class="logo link" href="./index.html">
+              <span class="logo-1 hover">web</span>
+              <span class="logo-2">
+                studio
+              </span>
+            </a>
+          </div>
 
           <!-- Меню навигации -->
 
@@ -51,25 +57,26 @@
         </nav>
 
         <!-- контакты -->
-
-        <address class="header-address">
-          <ul class="header-address-list list">
-            <li>
-              <a
-                class="header-address-list-email link hover focus"
-                href="mailto:"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="header-address-list-tel link hover focus"
-                href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="header-contacts">
+          <address class="header-address">
+            <ul class="header-address-list list">
+              <li>
+                <a
+                  class="header-address-list-email link hover focus"
+                  href="mailto:"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-address-list-tel link hover focus"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -108,7 +115,6 @@
       </div>
 
       <!-- projects section -->
-      <!-- Примеры проектов -->
       <div class="projects">
         <ul class="projects-list" style="list-style-type: none;">
           <!-- project-1 -->
@@ -233,29 +239,32 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer-contacts">
-        <a class="logo-2-1 link" href="./index.html">
-          <span class="logo-2-2 link hover">web</span>
-          studio
-        </a>
+        <div class="footer-logo">
+          <a class="logo-2-1 link" href="./index.html">
+            <span class="logo-2-2 link hover">web</span>
+            studio
+          </a>
+        </div>
+
         <!-- footer-address -->
         <address class="footer-contacts-address">
           г. Киев, пр-т Леси Украинки, 26
-
-          <ul class="footer-contacts-address-list list">
-            <!-- footer-email -->
-            <li class="footer-contacts-email">
-              <a class="footer-contacts-email-link link" href="mailto:"
-                >info@devstudio.com</a
-              >
-            </li>
-            <!-- footer-tel -->
-            <li class="footer-contacts-tel">
-              <a class="footer-contacts-tel link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </address>
+
+        <ul class="footer-contacts-address-list list">
+          <!-- footer-email -->
+          <li class="footer-contacts-email">
+            <a class="footer-contacts-email-link link" href="mailto:"
+              >info@devstudio.com</a
+            >
+          </li>
+          <!-- footer-tel -->
+          <li class="footer-contacts-tel">
+            <a class="footer-contacts-tel link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
 
       <!-- foorter-connections -->
@@ -318,8 +327,12 @@
         </ul>
       </div>
 
-      <b class="footer-connections-title-2">Подпишитесь на рассылку</b>
-      <input class="footer-connection-input" lang="en" type="text" />
+      <!-- subscription -->
+      <div class="footer-subscription">
+        <b class="footer-connections-title-2">Подпишитесь на рассылку</b>
+
+        <input class="footer-connection-input" lang="en" type="text" />
+      </div>
       <button class="footer-button-tosign">
         Подписаться
         <img src="./images/footer/icon-send.svg" alt="icon-send" />
