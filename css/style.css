@@ -98,17 +98,6 @@ h1 {
   letter-spacing: 0.03em;
   color: var(--logo-color-1);
 }
-.logo-2-1,
-.logo-2-2 {
-  font-family: var(--logo-text);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: var(--logo-color-2);
-}
 
 .logo-1 {
   margin-right: 9px;
@@ -169,9 +158,16 @@ main {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
 }
+.main-title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 /* main-hero */
-
 .main-hero-slider {
   background-color: rgba(47, 48, 58, 0.8);
   width: fit-content;
@@ -180,7 +176,6 @@ main {
   padding-bottom: 200px;
   margin-bottom: 94px;
 }
-
 .main-hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -253,7 +248,7 @@ main {
 
 /* Main-doings */
 
-.main-doings-title {
+.main-title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -284,10 +279,6 @@ main {
 
 .main-team {
   text-align: center;
-}
-.main-title {
-  text-align: center;
-  margin-bottom: 50px;
 }
 .main-team-list {
   display: flex;
@@ -395,6 +386,12 @@ main {
   text-align: center;
 }
 
+.main-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: center; */
+}
+
 /* Footer */
 footer {
   background: #2f303a;
@@ -409,15 +406,24 @@ footer {
   padding-left: 214px;
   padding-right: 214px;
 }
-
 .footer-logo {
   margin-bottom: 20px;
 }
-
+.logo-2-1,
+.logo-2-2 {
+  font-family: var(--logo-text);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-2);
+  display: inline-block;
+}
 .footer-contacts {
   margin-right: 69px;
 }
-
 .footer-contacts-address {
   font-family: var(--main-font);
   font-style: normal;
@@ -429,7 +435,6 @@ footer {
 
   margin-bottom: 9px;
 }
-
 .footer-contacts-email-link,
 .footer-contacts-tel {
   font-family: var(--main-font);
@@ -438,15 +443,10 @@ footer {
   font-size: 14px;
   line-height: 0.857;
   letter-spacing: 0.03em;
-  color: rgba(17, 2, 2, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 
   margin-bottom: 9px;
 }
-
-.footer-connections-socials {
-  display: flex;
-}
-
 .footer-connections-title-1 {
   font-family: var(--main-font);
   font-style: normal;
@@ -459,7 +459,9 @@ footer {
 
   margin-bottom: 20px;
 }
-
+.footer-connections-socials {
+  display: flex;
+}
 .footer-connections-title-2 {
   margin-left: 20px;
   font-family: var(--main-font);
@@ -472,11 +474,9 @@ footer {
   color: var(--footer-conection-text-color);
   margin-bottom: 20px;
 }
-
 .footer-connection-input {
   margin: auto;
 }
-
 .footer-button-tosign {
   /* position: absolute; */
   width: 200px;
