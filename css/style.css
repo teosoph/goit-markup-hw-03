@@ -222,7 +222,7 @@ main {
 }
 
 .main-merits-list-item {
-  display: inline-block;
+  display: block;
   width: 270px;
   height: 251px;
 }
@@ -347,27 +347,6 @@ main {
   align-items: center;
 }
 
-.main-clients-list-item-link-img {
-}
-
-.projects-list-item-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 0.5;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
-.projects-list-item-type {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--description-text-color);
-}
-
 /* Portfolio main-filter  */
 
 .main-filter-list-item {
@@ -390,6 +369,11 @@ main {
   text-align: center;
 }
 
+/* Portfolio Projects */
+
+.main-projects {
+  width: 1170px;
+}
 .main-projects-list {
   flex-wrap: wrap;
   display: flex;
@@ -399,12 +383,29 @@ main {
 .main-projects-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  width: 370px;
 }
-.main-projects-list-item:nth-child(3n) {
-  margin-right: 0;
+
+.main-projects-list-item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.5;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
 }
-.main-projects-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.main-projects-list-item-description {
+  margin: 20px;
+}
+.main-projects-list-item-type {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
 }
 
 /* Footer */
@@ -472,6 +473,7 @@ footer {
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
 
+  display: block;
   margin-bottom: 20px;
 }
 .footer-connections-socials {
