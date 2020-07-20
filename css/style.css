@@ -264,6 +264,7 @@ main {
   margin-right: 215px;
   margin-bottom: 94px;
 }
+
 .main-doings-list-title {
   font-weight: bold;
   font-size: 14px;
@@ -273,6 +274,9 @@ main {
   text-align: center;
 
   /* color: #ffffff; */
+}
+.main-doings-list-item {
+  text-align: center;
 }
 
 /* team section */
@@ -387,9 +391,20 @@ main {
 }
 
 .main-projects-list {
-  display: flex;
   flex-wrap: wrap;
-  /* align-content: center; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.main-projects-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.main-projects-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.main-projects-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 /* Footer */
