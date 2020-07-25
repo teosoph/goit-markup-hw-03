@@ -81,8 +81,6 @@
       <!--  Section 1 (HERO) -->
       <section class="main-hero">
         <div class="main-hero-slider">
-          <!-- <img src="./images/main/section-1/hero-img.jpg" alt="hero-img" /> -->
-
           <h1 class="main-hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
@@ -98,6 +96,7 @@
             <!-- item_1 -->
             <li class="main-merits-list-item">
               <img
+                class="main-merits-list-item-img"
                 src="./images/main/section-2/antenna.svg"
                 alt="Внимание к деталям"
               />
@@ -110,7 +109,8 @@
             <!-- item_2 -->
             <li class="main-merits-list-item">
               <img
-                src="./images/main/section-2/Vector.svg"
+                class="main-merits-list-item-img"
+                src="./images/main/section-2/clock.svg"
                 alt="Пунктуальность"
               />
               <h3 class="main-merits-list-item-title">Пунктуальность</h3>
@@ -122,6 +122,7 @@
             <!-- item_3 -->
             <li class="main-merits-list-item">
               <img
+                class="main-merits-list-item-img"
                 src="./images/main/section-2/diagram.svg"
                 alt="Планирование"
               />
@@ -135,6 +136,7 @@
             <!-- item_4 -->
             <li class="main-merits-list-item">
               <img
+                class="main-merits-list-item-img"
                 src="./images/main/section-2/astronaut.svg"
                 alt="Современные технологии"
               />
@@ -153,18 +155,24 @@
 
       <!-- Section 3 -->
       <section class="main-doings">
+        <!-- Title -->
         <h2 class="main-title">Чем мы занимаемся</h2>
+
+        <!-- main doings list -->
         <ul class="main-doings-list list">
+          <!-- item 1 -->
           <li class="main-doings-list-item">
-            <img
-              class="main-doings-list-item-img"
-              src="./images/main/section-3/box-1.jpg"
-              alt="Десктопные приложения"
-            />
-            <img src="./images/main/section-3/bg.svg" alt="grey-block" />
-            <p class="main-doings-list-title">Десктопные приложения</p>
+            <div class="main-doings-list-item-block">
+              <img
+                class="main-doings-list-item-img"
+                src="./images/main/section-3/box-1.jpg"
+                alt="Десктопные приложения"
+              />
+              <p class="main-doings-list-title">Десктопные приложения</p>
+            </div>
           </li>
 
+          <!-- item 2 -->
           <li class="main-doings-list-item">
             <img
               class="main-doings-list-item-img"
@@ -175,6 +183,7 @@
             <p class="main-doings-list-title">Мобильные приложения</p>
           </li>
 
+          <!-- item 3 -->
           <li class="main-doings-list-item">
             <img
               class="main-doings-list-item-img"
