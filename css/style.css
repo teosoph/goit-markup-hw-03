@@ -7,6 +7,7 @@
   --main-font: "Roboto";
   --main-font-color: #212121;
   --main-background-color: #ffffff;
+  --main-hero-slider-background-color: rgba(47, 48, 58, 0.8);
   /* menu */
   --header-menu-title-color: #212121;
   --header-menu-address-color: #757575;
@@ -106,7 +107,6 @@ h1 {
 .header-navigation {
   display: flex;
   align-items: center;
-  /* margin-right: 305px; */
 }
 
 .header-navigation-list {
@@ -169,18 +169,32 @@ main {
 
 /* main-hero */
 .main-hero {
-  width: inherit;
-}
-.main-hero-slider {
-  background-color: rgba(47, 48, 58, 0.8);
-  /* width: fit-content; */
-  height: 600px;
+  /* height: 600px;
   width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
   align-items: center;
-  text-align: center;
+  text-align: center; */
+}
+.main-hero-slider {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  height: 600px;
+
+  background-image: linear-gradient(
+      to bottom,
+      var(--main-hero-slider-background-color),
+      var(--main-hero-slider-background-color)
+    ),
+    url(../images/main/section-1/hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 94px;
 }
 .main-hero-title {
   font-weight: 900;
