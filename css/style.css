@@ -298,7 +298,7 @@ main {
   line-height: 1.2;
 }
 
-/* Main-doings ============================*/
+/* Main-doings ===================================*/
 .main-title {
   font-weight: bold;
   font-size: 36px;
@@ -310,17 +310,14 @@ main {
 }
 .main-doings-list {
   display: flex;
-  justify-content: space-between;
-
-  margin-left: 215px;
-  margin-right: 215px;
+  justify-content: center;
   margin-bottom: 94px;
-}
-.main-doings-list li:not(:last-child) {
-  margin-right: 30px;
 }
 .main-doings-list li {
   position: relative;
+}
+.main-doings-list li:not(:last-child) {
+  margin-right: 30px;
 }
 .main-doings-list a {
   display: flex;
@@ -342,8 +339,7 @@ main {
   text-transform: uppercase;
 }
 
-/* team section ===========================*/
-
+/* team section ==================================*/
 .main-team {
   text-align: center;
 }
@@ -387,7 +383,7 @@ main {
   margin-right: 24px;
 }
 
-/* Clients section */
+/* Clients section ===============================*/
 .main-clients-list {
   display: flex;
   flex-direction: row;
@@ -409,8 +405,7 @@ main {
   align-items: center;
 }
 
-/* Portfolio main-filter  */
-
+/* Portfolio main-filter  ========================*/
 .main-filter-list-item {
   display: flex;
   justify-content: center;
@@ -419,7 +414,6 @@ main {
   margin-right: 494px;
   margin-bottom: 34px;
 }
-
 .main-filter-list-item-button {
   font-family: var(--main-font);
   color: var(--main-font-color);
@@ -431,8 +425,7 @@ main {
   text-align: center;
 }
 
-/* Portfolio Projects */
-
+/* Portfolio Projects ============================*/
 .main-projects {
   width: 1170px;
 
@@ -440,12 +433,10 @@ main {
   margin-right: auto;
   margin-bottom: 94px;
 }
-
 .main-projects-list {
   display: flex;
   flex-wrap: wrap;
 }
-
 .main-projects-list-item {
   border: 1px solid #eeeeee;
   width: 370px;
@@ -457,11 +448,9 @@ main {
 .main-projects-list-item:nth-child(3n) {
   margin-right: 0;
 }
-
 .main-projects-list-item-img {
   margin-bottom: 20px;
 }
-
 .main-projects-list-item-description {
   margin-left: 24px;
 }
@@ -483,7 +472,7 @@ main {
   color: var(--description-text-color);
 }
 
-/* Footer */
+/* Footer ========================================*/
 footer {
   background: #2f303a;
   height: 252px;
