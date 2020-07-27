@@ -3,18 +3,20 @@
   --logo-text: "Raleway";
   --logo-color-1: #000000;
   --logo-color-2: #ffffff;
+  /* headrer menu */
+  --header-menu-title-color: #212121;
+  --header-menu-address-color: #757575;
   /* main */
   --main-font: "Roboto";
   --main-font-color: #212121;
   --main-background-color: #ffffff;
-  --main-hero-slider-background-color: rgba(47, 48, 58, 0.8);
-  /* menu */
-  --header-menu-title-color: #212121;
-  --header-menu-address-color: #757575;
   /* hero */
+  --main-hero-slider-background-color: rgba(47, 48, 58, 0.8);
   --hero-title-color: #ffffff;
   --title-color: #212121;
   --description-text-color: #757575;
+  /* main-section-2 merits-list */
+  --img-background-color: #f5f4fa;
   /* footer */
   --footer-conection-text-color: #ffffff;
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
@@ -235,15 +237,45 @@ main {
   display: block;
   width: 270px;
 }
-.main-merits-list-item-img {
+.item-1::before {
+  display: block;
+  content: "";
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  background-image: url(../images/main/section-2/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--img-background-color);
+}
+.item-2::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/main/section-2/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--img-background-color);
+}
+.item-3::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/main/section-2/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--img-background-color);
+}
+.item-4::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-image: url(../images/main/section-2/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--img-background-color);
 }
 .main-merits-list-item-title {
   font-weight: bold;
@@ -292,7 +324,6 @@ main {
     var(--main-hero-slider-background-color)
   );
 }
-
 /* background-position: center;
   background-repeat: no-repeat; */
 
