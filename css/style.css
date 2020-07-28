@@ -540,6 +540,7 @@ footer {
 }
 .footer-connections-socials {
   display: flex;
+  margin-right: 94px;
 }
 .footer-connections-socials li {
   width: 44px;
@@ -562,7 +563,6 @@ footer {
   background-image: url(/images/footer/linkedin.svg);
 }
 .footer-connections-title-2 {
-  margin-left: 20px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
@@ -571,13 +571,20 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
-  margin-bottom: 20px;
 }
-.footer-connection-input {
-  margin: auto;
+.footer-subscription input {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2779px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  margin-right: 12px;
 }
 .footer-button-tosign {
-  /* position: absolute; */
   width: 200px;
   height: 50px;
   left: 1184px;
@@ -595,8 +602,17 @@ footer {
 
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+.footer-button-tosign p {
+  margin-right: 10px;
+}
+.footer-button-tosign::after {
+  content: "";
+  display: block;
+  background-image: url(../images/footer/icon-send.svg);
+  width: 24px;
+  height: 24px;
 }
