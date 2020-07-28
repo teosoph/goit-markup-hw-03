@@ -376,7 +376,6 @@ main {
 }
 .main-team-list-teammate-social {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-left: 24px;
   margin-right: 24px;
@@ -541,6 +540,26 @@ footer {
 }
 .footer-connections-socials {
   display: flex;
+}
+.footer-connections-socials li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-connections-socials-instagram {
+  background-image: url(/images/footer/instagram.svg);
+}
+.footer-connections-socials-twiter {
+  background-image: url(/images/footer/twitter.svg);
+}
+.footer-connections-socials-facebook {
+  background-image: url(/images/footer/facebook.svg);
+}
+.footer-connections-socials-linkedin {
+  background-image: url(/images/footer/linkedin.svg);
 }
 .footer-connections-title-2 {
   margin-left: 20px;
