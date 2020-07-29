@@ -236,9 +236,7 @@ main {
 }
 
 /*  Section 2  */
-.merits {
-  /* margin-bottom: 94px; */
-}
+
 .merits-list {
   display: flex;
   flex-direction: row;
@@ -263,6 +261,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--merits-img-background-color);
+  margin-bottom: 30px;
 }
 .item-2::before {
   display: block;
@@ -273,6 +272,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--merits-img-background-color);
+  margin-bottom: 30px;
 }
 .item-3::before {
   display: block;
@@ -283,6 +283,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--merits-img-background-color);
+  margin-bottom: 30px;
 }
 .item-4::before {
   display: block;
@@ -293,23 +294,23 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--merits-img-background-color);
+  margin-bottom: 30px;
 }
-.merits-list-item-title {
+.merits-list-item h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: 0.875;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 .merits-list-item-description {
   font-weight: normal;
   font-size: 14px;
-  line-height: 0.583;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
-  display: inline-block;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 /* doings ===================================*/
