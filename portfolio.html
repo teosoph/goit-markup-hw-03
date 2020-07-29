@@ -16,42 +16,26 @@
     <h1 hidden>111111</h1>
     <header class="header">
       <div class="container">
-        <!-- меню навигации  -->
+        <!-- logo -->
+        <div class="header-navigation-logo">
+          <a class="logo link" href="./index.html">
+            <span class="logo-1 link hover">web</span>
+            <span class="logo-2 link"> studio </span>
+          </a>
+        </div>
+
+        <!-- Меню навигации -->
+
         <nav class="header-navigation">
-          <!-- logo -->
-
-          <div class="header-navigation-logo">
-            <a class="logo link" href="./index.html">
-              <span class="logo-1 hover">web</span>
-              <span class="logo-2">
-                studio
-              </span>
-            </a>
-          </div>
-
-          <!-- Меню навигации -->
-
           <ul class="header-navigation-list list">
-            <li class="header-navigation-list-item">
-              <a
-                class="header-navigation-list-item-link link hover focus"
-                href=""
-                >Студия</a
-              >
+            <li>
+              <a class="link hover focus" href="index.html">Студия</a>
             </li>
-            <li class="header-navigation-list-item">
-              <a
-                class="header-navigation-list-item-link link hover focus"
-                href="portfolio.html"
-                >Портфолио</a
-              >
+            <li>
+              <a class="link hover focus" href="portfolio.html">Портфолио</a>
             </li>
-            <li class="header-navigation-list-item">
-              <a
-                class="header-navigation-list-item-link link hover focus"
-                href=""
-                >Контакты</a
-              >
+            <li class="">
+              <a class="link hover focus" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -61,6 +45,7 @@
           <address class="header-address">
             <ul class="header-address-list list">
               <li>
+                <img src="/images/header/envelope.svg" alt="" />
                 <a
                   class="header-address-list-email link hover focus"
                   href="mailto:"
@@ -68,6 +53,7 @@
                 >
               </li>
               <li>
+                <img src="/images/header/smartphone.svg" alt="" />
                 <a
                   class="header-address-list-tel link hover focus"
                   href="tel:+380961111111"
@@ -81,190 +67,197 @@
     </header>
 
     <main>
-      <!-- buttons section -->
-      <!-- Разделы сайта -->
-      <div class="main-filter-list">
-        <h2 hidden>222222</h2>
-        <ul class="main-filter-list-item" style="list-style-type: none;">
-          <li>
-            <button class="main-filter-list-item-button hover focus">
-              Все
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-list-item-button hover focus">
-              Веб-сайты
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-list-item-button hover focus">
-              Приложения
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-list-item-button hover focus">
-              Дизайн
-            </button>
-          </li>
-          <li>
-            <button class="main-filter-list-item-button hover focus">
-              Маркетинг
-            </button>
-          </li>
-        </ul>
-      </div>
+      <!-- buttons section ====== Разделы сайта -->
+      <section class="buttons-section">
+        <div class="filter-list">
+          <h2 hidden>222222</h2>
+          <ul class="filter-list-item" style="list-style-type: none;">
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Все
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Веб-сайты
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Приложения
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- projects section -->
-      <div class="main-projects">
-        <ul class="main-projects-list list">
-          <!-- project-1 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/1.jpg"
-                alt="Технокряк"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Технокряк</h2>
-                <p class="main-projects-list-item-type">Веб-сайт</p>
-                <p hidden>
-                  Технокряк это современная площадка распространения
-                  коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.
-                </p>
-              </div>
-            </a>
-          </li>
+      <section>
+        <div class="projects">
+          <ul class="projects-list list">
+            <!-- project-1 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/1.jpg"
+                  alt="Технокряк"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Технокряк</h2>
+                  <p class="projects-list-item-type">Веб-сайт</p>
+                  <p hidden>
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-2 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/2.jpg"
-                alt="Постер"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title link">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="main-projects-list-item-type">Дизайн</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-2 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/2.jpg"
+                  alt="Постер"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title link">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects-list-item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-3 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/3.jpg"
-                alt="Seafood"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Ресторан Seafood</h2>
-                <p class="main-projects-list-item-type">Приложение</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-3 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/3.jpg"
+                  alt="Seafood"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Ресторан Seafood
+                  </h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-4 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/4.jpg"
-                alt="Prime"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Проект Prime</h2>
-                <p class="main-projects-list-item-type">Маркетинг</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-4 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/4.jpg"
+                  alt="Prime"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект Prime</h2>
+                  <p class="projects-list-item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-5 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/5.jpg"
-                alt="Boxes"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Проект Boxes</h2>
-                <p class="main-projects-list-item-type">Приложение</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-5 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/5.jpg"
+                  alt="Boxes"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект Boxes</h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-6 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img src="./images/projects/6.jpg" alt="Borders" />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">
-                  Inspiration has no Borders
-                </h2>
-                <p class="main-projects-list-item-type">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-6 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img src="./images/projects/6.jpg" alt="Borders" />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="projects-list-item-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-7 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img src="./images/projects/7.jpg" alt="Limited" />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">
-                  Издание Limited Edition
-                </h2>
-                <p class="main-projects-list-item-type">Дизайн</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-7 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img src="./images/projects/7.jpg" alt="Limited" />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="projects-list-item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-8 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/8.jpg"
-                alt="LAB"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Проект LAB</h2>
-                <p class="main-projects-list-item-type">Маркетинг</p>
-              </div>
-            </a>
-          </li>
+            <!-- project-8 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/8.jpg"
+                  alt="LAB"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект LAB</h2>
+                  <p class="projects-list-item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
 
-          <!-- project-9 -->
-          <li class="main-projects-list-item">
-            <a class="main-projects-list-item-link link" href="">
-              <img
-                class="main-projects-list-item-img"
-                src="./images/projects/9.jpg"
-                alt="Business"
-              />
-              <div class="main-projects-list-item-description">
-                <h2 class="main-projects-list-item-title">Growing Business</h2>
-                <p class="main-projects-list-item-type">Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+            <!-- project-9 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <img
+                  class="projects-list-item-img"
+                  src="./images/projects/9.jpg"
+                  alt="Business"
+                />
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Growing Business
+                  </h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
       <div class="footer-contacts">
         <div class="footer-logo">
-          <a class="logo-2-1 link" href="./index.html">
-            <span class="logo-2-2 link hover">web</span>
-            studio
+          <a class="footer-logo-link" href="./index.html">
+            <span class="logo-2-1 link hover">web</span>
+            <span class="logo-2-2 link"> studio </span>
           </a>
         </div>
 
@@ -292,72 +285,36 @@
       <!-- foorter-connections -->
       <div class="footer-connections">
         <!-- foorter-connections-title -->
-        <b class="footer-connections-title-1"> Присоединяйтесь </b>
+        <p>Присоединяйтесь</p>
 
         <ul class="footer-connections-socials list">
           <li class="footer-connections-socials-instagram">
-            <img
-              class="footer-connections-socials-instagram-img"
-              src="./images/main/section-4/instagram.svg"
-              alt="instagram"
-            />
-            <a
-              class="footer-connections-socials-instagram-link"
-              href=""
-              aria-label="Instagram icon"
-            ></a>
+            <a href="" aria-label="Instagram icon"></a>
           </li>
 
           <li class="footer-connections-socials-twiter">
-            <img
-              class="footer-connections-socials-twiter-img"
-              src="./images/main/section-4/twiter.svg"
-              alt="twiter"
-            />
-            <a
-              class="footer-connections-socials-twiter-link"
-              href=""
-              aria-label="twiter icon"
-            ></a>
+            <a href="" aria-label="twiter icon"></a>
           </li>
 
           <li class="footer-connections-socials-facebook">
-            <img
-              class="footer-connections-socials-facebook-img"
-              src="./images/main/section-4/facebook.svg"
-              alt="facebook"
-            />
-            <a
-              class="footer-connections-socials-facebook-link"
-              href=""
-              aria-label="facebook icon"
-            ></a>
+            <a href="" aria-label="facebook icon"></a>
           </li>
 
           <li class="footer-connections-socials-linkedin">
-            <img
-              class="footer-connections-socials-linkedin-img"
-              src="./images/main/section-4/Linkedin.svg"
-              alt="linkedin"
-            />
-            <a
-              class="footer-connections-socials-linkedin-link"
-              href=""
-              aria-label="linkedin icon"
-            ></a>
+            <a href="" aria-label="linkedin icon"></a>
           </li>
         </ul>
       </div>
 
       <!-- subscription -->
       <div class="footer-subscription">
-        <b class="footer-connections-title-2">Подпишитесь на рассылку</b>
-
+        <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
         <input class="footer-connection-input" lang="en" type="text" />
       </div>
       <button class="footer-button-tosign">
-        Подписаться
-        <img src="./images/footer/icon-send.svg" alt="icon-send" />
+        <span>
+          Подписаться
+        </span>
       </button>
     </footer>
   </body>

@@ -7,24 +7,29 @@
   --header-menu-title-color: #212121;
   --header-menu-address-color: #757575;
   /* main */
-  --main-font: "Roboto";
-  --main-font-color: #212121;
-  --main-background-color: #ffffff;
+  --font: "Roboto";
+  --font-color: #212121;
+  --background-color: #ffffff;
   /* hero */
-  --main-hero-slider-background-color: rgba(47, 48, 58, 0.8);
+  --hero-slider-background-color: rgba(47, 48, 58, 0.8);
   --hero-title-color: #ffffff;
   --title-color: #212121;
   --description-text-color: #757575;
-  /* main-section-2 merits-list */
-  --main-merits-img-background-color: #f5f4fa;
-  /* main-section-3 doing-list*/
-  --main-doings-img-background: rgba(47, 48, 58, 0.8);
-  --main-doings-img-font: #ffffff;
+  /* section-2 merits-list */
+  --merits-img-background-color: #f5f4fa;
+  /* section-3 doing-list*/
+  --doings-img-background: rgba(47, 48, 58, 0.8);
+  --doings-img-font: #ffffff;
   /* footer */
   --footer-conection-text-color: #ffffff;
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
   /* hover */
   --accent-color: #2196f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -55,10 +60,10 @@ html {
 }
 
 body {
-  background-color: var(--main-background-color);
-  font-family: var(--main-font);
+  background-color: var(--background-color);
+  font-family: var(--font);
   font-size: 16px;
-  color: var(--main-font-color);
+  color: var(--font-color);
 }
 
 h1 {
@@ -66,20 +71,25 @@ h1 {
 }
 
 .container {
-  /* width: 1200px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+section {
+  padding-bottom: 94px;
+}
+
 /* HEADER =====================================*/
 
-.header,
-.container {
+.header {
+  display: flex;
+}
+
+.header div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header-navigation-logo {
   padding-top: 24px;
@@ -166,9 +176,9 @@ main {
   font-weight: 500;
   line-height: 0.615;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: var(--font-color);
 }
-.main-title {
+.title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -177,26 +187,26 @@ main {
   margin-bottom: 50px;
 }
 
-/* main-hero */
-.main-hero-slider {
+/* hero */
+.hero-slider {
   padding-bottom: 200px;
   padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   max-width: 1600px;
   height: 600px;
 
   background-image: linear-gradient(
       to bottom,
-      var(--main-hero-slider-background-color),
-      var(--main-hero-slider-background-color)
+      var(--hero-slider-background-color),
+      var(--hero-slider-background-color)
     ),
     url(../images/main/section-1/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-hero-title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.2;
@@ -206,7 +216,7 @@ main {
   color: #ffffff;
   margin-bottom: 30px;
 }
-.main-hero-button {
+.hero-button {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -226,10 +236,10 @@ main {
 }
 
 /*  Section 2  */
-.main-merits {
-  margin-bottom: 94px;
+.merits {
+  /* margin-bottom: 94px; */
 }
-.main-merits-list {
+.merits-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -237,10 +247,10 @@ main {
   margin-left: 215px;
   margin-right: 215px;
 }
-.main-merits-list-item:not(:last-child) {
+.merits-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.main-merits-list-item {
+.merits-list-item {
   display: block;
   width: 270px;
 }
@@ -252,7 +262,7 @@ main {
   background-image: url(../images/main/section-2/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--main-merits-img-background-color);
+  background-color: var(--merits-img-background-color);
 }
 .item-2::before {
   display: block;
@@ -262,7 +272,7 @@ main {
   background-image: url(../images/main/section-2/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--main-merits-img-background-color);
+  background-color: var(--merits-img-background-color);
 }
 .item-3::before {
   display: block;
@@ -272,7 +282,7 @@ main {
   background-image: url(../images/main/section-2/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--main-merits-img-background-color);
+  background-color: var(--merits-img-background-color);
 }
 .item-4::before {
   display: block;
@@ -282,9 +292,9 @@ main {
   background-image: url(../images/main/section-2/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--main-merits-img-background-color);
+  background-color: var(--merits-img-background-color);
 }
-.main-merits-list-item-title {
+.merits-list-item-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 0.875;
@@ -292,7 +302,7 @@ main {
   text-transform: uppercase;
   color: #212121;
 }
-.main-merits-list-item-description {
+.merits-list-item-description {
   font-weight: normal;
   font-size: 14px;
   line-height: 0.583;
@@ -302,8 +312,8 @@ main {
   line-height: 1.2;
 }
 
-/* Main-doings ===================================*/
-.main-title {
+/* doings ===================================*/
+.title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -312,30 +322,30 @@ main {
   text-align: center;
   margin-bottom: 50px;
 }
-.main-doings-list {
+.doings-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
-.main-doings-list li {
+.doings-list li {
   position: relative;
 }
-.main-doings-list li:not(:last-child) {
+.doings-list li:not(:last-child) {
   margin-right: 30px;
 }
-.main-doings-list a {
+.doings-list a {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
-  color: var(--main-doings-img-font);
+  color: var(--doings-img-font);
   width: 100%;
   height: 70px;
-  background-color: var(--main-doings-img-background);
+  background-color: var(--doings-img-background);
 }
-.main-doings-list h3 {
-  font-family: var(--main-font);
+.doings-list h3 {
+  font-family: var(--font);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -343,27 +353,27 @@ main {
 }
 
 /* team section ==================================*/
-.main-team-list {
+.team-list {
   display: flex;
   justify-content: center;
   margin-left: 215px;
   margin-right: 215px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
-.main-team-list-teammate {
+.team-list-teammate {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
-.main-team-list-teammate:not(:last-child) {
+.team-list-teammate:not(:last-child) {
   margin-right: 30px;
 }
-.main-team-list-teammate-img {
+.team-list-teammate-img {
   display: block;
   margin-bottom: 30px;
 }
-.main-team-list-teammate-title {
+.team-list-teammate-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -372,7 +382,7 @@ main {
   color: var(--title-color);
   text-align: center;
 }
-.main-team-list-teammate-position {
+.team-list-teammate-position {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -380,7 +390,7 @@ main {
   color: var(--description-text-color);
   text-align: center;
 }
-.main-team-list-teammate-social {
+.team-list-teammate-social {
   display: flex;
   justify-content: space-between;
   margin-left: 24px;
@@ -389,17 +399,17 @@ main {
 }
 
 /* Clients section ===============================*/
-.main-clients-list {
+.clients-list {
   display: flex;
   justify-content: center;
   margin-left: 215px;
   margin-right: 215px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
-.main-clients-list li:not(:last-child) {
+.clients-list li:not(:last-child) {
   margin-right: 30px;
 }
-.main-clients-list a {
+.clients-list a {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -408,21 +418,23 @@ main {
   justify-content: center;
 }
 
-/* Portfolio main-filter  ========================*/
-.main-filter-list-item {
+/* Portfolio filter  ========================*/
+.buttons-section {
+  padding-top: 93px;
+  padding-bottom: 50px;
+}
+
+.filter-list-item {
   display: flex;
   justify-content: center;
-  margin-top: 93px;
-  margin-left: 495px;
-  margin-right: 494px;
-  margin-bottom: 34px;
+  margin: 0;
 }
-.main-filter-list-item li:not(:last-child) {
+.filter-list-item li:not(:last-child) {
   margin-right: 8px;
 }
-.main-filter-list-item-button {
-  font-family: var(--main-font);
-  color: var(--main-font-color);
+.filter-list-item-button {
+  font-family: var(--font);
+  color: var(--font-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -437,18 +449,18 @@ main {
 }
 
 /* Portfolio Projects ============================*/
-.main-projects {
+.projects {
   width: 1170px;
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
-.main-projects-list {
+.projects-list {
   display: flex;
   flex-wrap: wrap;
 }
-.main-projects-list-item {
+.projects-list-item {
   border: 1px solid #eeeeee;
   width: 370px;
   height: 404px;
@@ -456,22 +468,22 @@ main {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.main-projects-list li {
+.projects-list li {
   border: 1px solid #eeeeee;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.main-projects-list-item:nth-child(3n) {
+.projects-list-item:nth-child(3n) {
   margin-right: 0;
 }
-.main-projects-list-item-img {
+.projects-list-item-img {
   margin-bottom: 20px;
 }
-.main-projects-list-item-description {
+.projects-list-item-description {
   margin-left: 24px;
 }
-.main-projects-list-item-title {
+.projects-list-item-title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -479,8 +491,8 @@ main {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-.main-projects-list-item-type {
-  font-family: var(--main-font);
+.projects-list-item-type {
+  font-family: var(--font);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -522,7 +534,7 @@ footer {
   margin-right: 69px;
 }
 .footer-contacts-address {
-  font-family: var(--main-font);
+  font-family: var(--font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -534,7 +546,7 @@ footer {
 }
 .footer-contacts-email-link,
 .footer-contacts-tel {
-  font-family: var(--main-font);
+  font-family: var(--font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -544,8 +556,8 @@ footer {
 
   margin-bottom: 9px;
 }
-.footer-connections-title-1 {
-  font-family: var(--main-font);
+.footer-connections p {
+  font-family: var(--font);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -582,7 +594,7 @@ footer {
   background-image: url(/images/footer/linkedin.svg);
 }
 .footer-connections-title-2 {
-  font-family: var(--main-font);
+  font-family: var(--font);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -613,7 +625,7 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  font-family: var(--main-font);
+  font-family: var(--font);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
