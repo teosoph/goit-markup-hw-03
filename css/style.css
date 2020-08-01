@@ -15,16 +15,21 @@
   --hero-title-color: #ffffff;
   --title-color: #212121;
   --description-text-color: #757575;
+
   /* section-2 merits-list */
   --merits-img-background-color: #f5f4fa;
   /* section-3 doing-list*/
   --doings-img-background: rgba(47, 48, 58, 0.8);
   --doings-img-font: #ffffff;
+  /* Team */
+  --teammember-social-img-hover: #fff;
   /* footer */
   --footer-conection-text-color: #ffffff;
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
   /* hover */
   --accent-color: #2196f3;
+
+  --max-width: 1200px;
 }
 
 * {
@@ -75,6 +80,7 @@ h1 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: var(--max-width);
 }
 
 section {
@@ -399,9 +405,13 @@ main {
   margin-bottom: 24px;
 }
 .team-list-teammate-social-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+
   border: 3px solid red;
 }
 .team-list-teammate-social-list li a {
@@ -411,6 +421,7 @@ main {
 .team-list-teammate-social-list-item-link-svg {
   height: 22px;
   width: 22px;
+  color: #afb1b8;
 }
 
 .team-list-teammate-social-list-item:hover {
@@ -418,7 +429,7 @@ main {
 }
 .team-list-teammate-social-list-item:hover
   .team-list-teammate-social-list-item-link-svg {
-  fill: #ffffff;
+  fill: var(--teammember-social-img-hover);
 }
 
 /* Clients section ===============================*/
