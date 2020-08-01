@@ -359,7 +359,6 @@ main {
   justify-content: center;
   margin-left: 215px;
   margin-right: 215px;
-  /* margin-bottom: 94px; */
 }
 .team-list-teammate {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -374,29 +373,52 @@ main {
   display: block;
   margin-bottom: 30px;
 }
-.team-list-teammate-title {
+.team-list-teammate h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
+  margin-bottom: 10px;
 }
-.team-list-teammate-position {
+.team-list-teammate p {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   text-align: center;
+  margin-bottom: 16px;
 }
-.team-list-teammate-social {
+.team-list-teammate-social-list {
   display: flex;
   justify-content: space-between;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
   margin-bottom: 24px;
+}
+.team-list-teammate-social-list li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.team-list-teammate-social-list li a {
+  display: block;
+}
+
+.team-list-teammate-social-list-item-link-svg {
+  height: 22px;
+  width: 22px;
+}
+
+.team-list-teammate-social-list-item:hover {
+  background-color: var(--accent-color);
+}
+.team-list-teammate-social-list-item:hover
+  .team-list-teammate-social-list-item-link-svg {
+  fill: #ffffff;
 }
 
 /* Clients section ===============================*/
@@ -583,16 +605,16 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-connections-socials-instagram {
-  background-image: url(/images/footer/instagram.svg);
+  background-image: url(./images/footer/instagram.svg);
 }
 .footer-connections-socials-twiter {
-  background-image: url(/images/footer/twitter.svg);
+  background-image: url(./images/footer/twitter.svg);
 }
 .footer-connections-socials-facebook {
-  background-image: url(/images/footer/facebook.svg);
+  background-image: url(./images/footer/facebook.svg);
 }
 .footer-connections-socials-linkedin {
-  background-image: url(/images/footer/linkedin.svg);
+  background-image: url(./images/footer/linkedin.svg);
 }
 .footer-connections-title-2 {
   font-family: var(--font);
