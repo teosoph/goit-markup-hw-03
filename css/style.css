@@ -483,47 +483,43 @@ main {
 /* Portfolio Projects ============================*/
 .projects {
   width: 1170px;
-
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 94px; */
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
 }
-.projects-list-item {
+.projects-list li {
+  width: calc((100% - 60px) / 3);
+
   border: 1px solid #eeeeee;
-  width: 370px;
-  height: 404px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.projects-list li {
-  border: 1px solid #eeeeee;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.projects-list-item:nth-child(3n) {
+.projects-list li:nth-child(3n) {
   margin-right: 0;
 }
-.projects-list-item-img {
+.projects-list-item-link img {
   margin-bottom: 20px;
 }
-.projects-list-item-description {
+.projects-list-item-link div {
   margin-left: 24px;
 }
-.projects-list-item-title {
+.projects-list-item-link h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 0.5;
   letter-spacing: 0.06em;
   color: var(--title-color);
+
+  margin-bottom: 12px;
 }
-.projects-list-item-type {
+.projects-list-item-link p {
   font-family: var(--font);
   font-style: normal;
   font-weight: normal;
@@ -531,6 +527,8 @@ main {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
+
+  margin-bottom: 20px;
 }
 
 /* Footer ========================================*/
