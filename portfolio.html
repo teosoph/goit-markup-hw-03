@@ -298,7 +298,8 @@
 
     <!-- FOOTER ============================================================= -->
     <footer class="footer">
-      <div class="footer-wraper container flex-container">
+      <div class="footer-container">
+        <!-- footer-contacts ========================================= -->
         <div class="footer-contacts">
           <div class="footer-logo">
             <a class="footer-logo-link link" href="./index.html">
@@ -393,11 +394,24 @@
         <!-- subscription ===========================================-->
         <div hidden class="footer-subscription">
           <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
-          <input class="footer-connection-input" lang="en" type="text" />
+
+          <form class="footer-subscription-form" action="#" method="GET">
+            <section class="footer-contact-form-section">
+              <input
+                class="footer-connection-input"
+                type="email"
+                lang="en"
+                name="user-email"
+                placeholder="Your email*"
+                required
+              />
+            </section>
+
+            <button class="footer-button-tosign" type="submit">
+              <span> Подписаться </span>
+            </button>
+          </form>
         </div>
-        <button class="footer-button-tosign">
-          <span> Подписаться </span>
-        </button>
       </div>
     </footer>
   </body>
