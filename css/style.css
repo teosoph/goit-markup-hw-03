@@ -596,9 +596,9 @@ main {
 }
 /* Footer ========================================*/
 footer {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-start; */
+  /* justify-content: flex-start; */
 
   max-width: 1600px;
   padding-left: 214px;
