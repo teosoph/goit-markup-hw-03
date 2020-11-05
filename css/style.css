@@ -110,12 +110,10 @@ section {
 }
 
 /* HEADER =====================================*/
-.header div {
-  height: 80px;
-
+header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .logo {
   display: flex;
@@ -198,7 +196,7 @@ section {
 }
 
 /* contacts ==================================== */
-.header-contacts {
+.header-address {
   margin-left: auto;
 }
 .header-address ul {
