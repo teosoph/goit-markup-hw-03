@@ -551,11 +551,7 @@ main .buttons {
 }
 
 /* Portfolio Projects ============================*/
-.projects-section {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
