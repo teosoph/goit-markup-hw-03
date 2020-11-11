@@ -75,7 +75,7 @@ img {
 }
 section {
   margin: 0 auto;
-  border: 10px solid #ff0000;
+  /* border: 10px solid #ff0000; */
   width: 100%;
 }
 
@@ -103,7 +103,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
 
-  border: 10px solid #00ff37;
+  /* border: 10px solid #00ff37; */
 }
 /* .flex-container {
   display: flex;
@@ -111,7 +111,8 @@ section {
 
 /* HEADER =====================================*/
 header {
-  border: 10px solid #1900ff;
+  /* border: 10px solid #1900ff; */
+  border: 1px solid #ececec;
 }
 
 header .container {
@@ -640,7 +641,8 @@ footer {
   background: #2f303a;
   height: 252px;
 
-  border: 10px solid #1900ff;
+  /* border: 10px solid  /; ищквукЖ 10зч ыщдшв №1900ааж ;/
+ #1900ff; */
 }
 footer .container {
   display: flex;
